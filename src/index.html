@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcom</title>
     <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -16,6 +19,8 @@
             width: 100%;
             height: 100%;
             position: absolute;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
         body::after{
             content: "";
@@ -39,7 +44,6 @@
             justify-content: right;
             align-items: center;
             color: white;
-            
         }
         header h4{
             font-size: 3rem;
@@ -61,6 +65,7 @@
             padding: 14px 16px;
             display: block;
             color:white;
+            border-radius: 25px;
             transition: .4s;  
         }
         header li a:hover{
@@ -78,7 +83,7 @@
         section{
             width: 80%;
             margin: 0 auto;
-            padding-top: 17%;
+            padding-top: 10rem;
             left: 50%;
             color: white;
         }
@@ -89,17 +94,18 @@
         }
         section p{
             font-size: 1rem;
-            padding-top: 10px;
+            padding-top: 20px;
             width: 40%;
             text-align: center;
             margin:0 auto;
+            width: 60%;
         }
 
         .content{
+            padding: 4rem 0;
             width: 80%;
             margin: 0 auto;
-            padding-top: 5%;
-            position: relative;
+            position: relative; 
         }
         .content ul{
             cursor: pointer;
@@ -109,52 +115,64 @@
             justify-content: center;
         }
         .content ul li{
-            margin: 0 30px;
-        }
-        .content ul li a{
-            background-color: blanchedalmond;
-            width: 450px;
-            height: 250px;
-            padding: 14px 16px;
-            text-decoration: none;
-            display: block;  
-            transition: .4s;
-        }
-        .content ul li a:hover{
-            transform: scale(1.15, 1.15);          
-        }
-
-        .content2{
-            width: 80%;
-            margin: 0 auto;
-        }
-        .content2 ul{
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .content2 ul li{
             margin: 30px 30px;
         }
-        .content2 ul li a{
-            background-color: blanchedalmond;
-            width: 450px;
-            height: 250px;
-            padding: 0 16px;
+        .content ul li a{
+            color: rgb(0, 0, 0);
+            border-radius: 25px;
             text-decoration: none;
             display: block;
-            transition: .4s;  
+            width: 450px;
+            height: 250px;
+            transition: .4s;
+            box-shadow:  3px 3px 6px grey;
+            position: relative;
         }
-        .content2 ul li a:hover{
+        .content ul li a h1 {
+            top: 40px;
+            left: 45px;
+            position: absolute;            
+        }
+
+        .content ul li a  p{
+            position: absolute;
+            top: 90px;
+            left: 45px;
+            right: 45px;
+        }
+
+        .content ul li a:hover{
             transform: scale(1.15, 1.15);
         }
-       
+        footer{
+            margin: 0;
+            padding:  0;
+            position: relative;
+        }
+        footer ul{
+            padding-top: 1.5rem;
+            list-style: none;
+            width: 100%;
+            height: 5rem;
+            background-color: white;
+        }
+
+        footer ul li a{
+            width: 50px;
+            padding: 0 5rem;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+        }
+        footer ul li a:hover{
+            font-size: 1.5rem;
+        }
+
     </style>
 </head>
 <body>
-    <header>
+    <div class="scrollbar-hidden">
+         <header>
         <h4>Thailand<i></i></h4>
         <ul>
             <li><a href="../src/index.html">หน้าแรก</a></li>
@@ -174,36 +192,41 @@
     <div class="content">
         <ul >
             <li>
-                <a href="#" >
-                    <h1>ภาคเหนื่อ</h1>
-                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                <a href="#" style="background-image: url(../img/1.jpg); background-size: cover;">
+                        <h1>ภาคเหนื่อ</h1>
+                        <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
                 </a>
             </li>
             <li >
-                <a href="#" >
+                <a href="#" style="background-image: url(../img/2.jpg); background-size: cover;">
                     <h1>ภาคเหนื่อ</h1>
                     <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
                 </a>
             </li>
         </ul>
-    </div>
-
-    <div class="content2">
         <ul >
             <li>
-                <a href="#" >
-                    <h1>ภาคเหนื่อ</h1>
-                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                <a href="#" style="background-image: url(../img/3.jpg); background-size: cover;">
+                        <h1>ภาคเหนื่อ</h1>
+                        <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
                 </a>
             </li>
+
             <li >
-                <a href="#" >
+                <a href="#" style="background-image: url(../img/4.jpg); background-size: cover;">
                     <h1>ภาคเหนื่อ</h1>
                     <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
                 </a>
             </li>
         </ul>
     </div>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+    </div>
+   
 </body>
 </html>
