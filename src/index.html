@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        body::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/bg3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter:brightness(45%);
+            z-index: -1;
+            position: fixed;
+        }
+        
+        header{
+            padding-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            color: white;
+            
+        }
+        header h4{
+            font-size: 3rem;
+            cursor: pointer;
+            margin-right: auto;
+            padding: 0px 16px;
+        }
+        header ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        header li {
+            float:left;
+        }
+        header li a{
+            text-decoration: none;
+            padding: 14px 16px;
+            display: block;
+            color:white;
+            transition: .4s;  
+        }
+        header li a:hover{
+            color:white;
+            background-color:black;
+        }
+
+        /*
+        @media screen and (max-width: 600px) { 
+            header{justify-content: center;}
+            ul li {float: none;}
+            h4 {display: none;}
+        } */
+
+        section{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 17%;
+            left: 50%;
+            color: white;
+        }
+        section h2{
+            display: block;
+            font-size: 3rem;
+            text-align: center;
+        }
+        section p{
+            font-size: 1rem;
+            padding-top: 10px;
+            width: 40%;
+            text-align: center;
+            margin:0 auto;
+        }
+
+        .content{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 5%;
+            position: relative;
+        }
+        .content ul{
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content ul li{
+            margin: 0 30px;
+        }
+        .content ul li a{
+            background-color: blanchedalmond;
+            width: 450px;
+            height: 250px;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;  
+            transition: .4s;
+        }
+        .content ul li a:hover{
+            transform: scale(1.15, 1.15);          
+        }
+
+        .content2{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .content2 ul{
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content2 ul li{
+            margin: 30px 30px;
+        }
+        .content2 ul li a{
+            background-color: blanchedalmond;
+            width: 450px;
+            height: 250px;
+            padding: 0 16px;
+            text-decoration: none;
+            display: block;
+            transition: .4s;  
+        }
+        .content2 ul li a:hover{
+            transform: scale(1.15, 1.15);
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Thailand<i></i></h4>
+        <ul>
+            <li><a href="../src/index.html">หน้าแรก</a></li>
+            <li><a href="#">ภาคเหนือ</a></li>
+            <li><a href="#">ภาคกลาง</a></li>
+            <li><a href="#">ภาคตะวันออก</a></li>
+            <li><a href="#">ภาคใต้</a></li>
+        </ul>
+    </header> 
+    <section>
+        <div class="header">
+            <h2>เที่ยว 4 ภาคของไทย</h2>
+            <p>ประเทศไทยเป็นดินแดน ที่อุดมสมบูรณ์ไปด้วย ทรัพยากรธรรมชาติ อีกทั้งมีวัฒนธรรมและ ประเพณี ที่ดีงามมาตั้งแต่โบราณกาล ควรค่าแก่ ความภูมิใจของ ชาวไทยทุกคน ความอุดมสมบูรณ์ ดังกล่าว ก่อให้เกิด เป็นแหล่งท่องเที่ยว ที่ชวนประทับใจในแต่ละภูมิภาค สัมผัสธรรมชาติ และวิถีชีวิตคนไทยในดินแดนต่างๆ แล้วจะทราบได้ว่า "เที่ยวเมืองไทย ไม่ไปไม่รู้"</p>
+        </div>
+    </section>
+    
+    <div class="content">
+        <ul >
+            <li>
+                <a href="#" >
+                    <h1>ภาคเหนื่อ</h1>
+                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                </a>
+            </li>
+            <li >
+                <a href="#" >
+                    <h1>ภาคเหนื่อ</h1>
+                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content2">
+        <ul >
+            <li>
+                <a href="#" >
+                    <h1>ภาคเหนื่อ</h1>
+                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                </a>
+            </li>
+            <li >
+                <a href="#" >
+                    <h1>ภาคเหนื่อ</h1>
+                    <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer></footer>
+</body>
+</html>
