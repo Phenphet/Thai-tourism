@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim">
+    <script src="https://kit.fontawesome.com/bacc811e90.js" crossorigin="anonymous"></script>
     <title>Welcom</title>
     <style>
         ::-webkit-scrollbar{
             display: none;
         }
         *{
+            
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
         }
 
         body{
             width: 100%;
             height: 100%;
             position: absolute;
-
+            font-family: Itim;
         }
         body::after{
             content: "";
@@ -35,8 +39,8 @@
             z-index: -1;
             position: fixed;
         }
-        
         header{
+            font-size: 1.25rem;
             padding-top: 20px;
             position: relative;
             display: flex;
@@ -93,7 +97,7 @@
             text-align: center;
         }
         section p{
-            font-size: 1rem;
+            font-size: 1.5rem;
             padding-top: 20px ;
             width: 40%;
             text-align: center;
@@ -102,6 +106,7 @@
         }
 
         .content{
+            font-family: Itim;
             padding: 4rem 0;
             width: 80%;
             margin: 0 auto;
@@ -118,61 +123,63 @@
             margin: 30px 30px;
         }
         .content ul li a{
-            color: rgb(0, 0, 0);
+            color: rgb(251, 251, 251);
             border-radius: 25px;
             text-decoration: none;
             display: block;
             width: 450px;
             height: 250px;
             transition: .4s;
-            box-shadow:  3px 3px 6px grey;
+            box-shadow:  3px 3px 6px rgb(255, 255, 255);
             position: relative;
         }
         .content ul li a h1 {
-            top: 40px;
+            font-size: 3rem;
+            top: 80px;
             left: 45px;
             position: absolute;            
         }
 
         .content ul li a  p{
+            font-size: 1.5rem;
             position: absolute;
-            top: 90px;
+            top: 150px;
             left: 45px;
-            right: 45px;
         }
 
         .content ul li a:hover{
             transform: scale(1.15, 1.15);
         }
         footer{
+            font-size: 1.5rem;
+            width: 100%;
+            height: 6rem;
             margin: 0;
             padding:  0;
             position: relative;
+            background-color: white;
         }
         footer ul{
-            padding-top: 1.5rem;
             list-style: none;
-            width: 100%;
-            height: 5rem;
-            background-color: white;
+            width: 50%;
+            margin: 0 auto;
+        }
+        footer ul li {
+            padding-top: 1.4rem;
         }
 
         footer ul li a{
-            width: 50px;
-            padding: 0 5rem;
             text-decoration: none;
             color: black;
-            font-size: 1rem;
+            border: black 1px;
         }
-        footer ul li a:hover{
-            font-size: 1.5rem;
-        }
+        
     </style>
 </head>
 <body>
     <div class="scrollbar-hidden">
         <header>
-        <h4>Thailand<i></i></h4>
+        <h4>Thailand <i class="fas fa-map-marker-alt"></i><hr></h4>
             <ul>
                 <li><a href="../src/index.html">หน้าแรก</a></li>
                 <li><a href="../src/page1.html">ภาคเหนือ</a></li>
@@ -191,14 +198,14 @@
             <ul >
                 <li>
                     <a href="../src/page1.html" style="background-image: url(../img/1.jpg); background-size: cover;">
-                            <h1>ภาคเหนื่อ</h1>
-                            <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                            <h1><b>ภาคเหนื่อ</h1>
+                            <p>7 ที่เที่ยว ที่คุณไม่ควรพลาด ของภาคเหนือ</p>
                     </a>
                 </li>
                 <li >
                     <a href="../src/page2.html" style="background-image: url(../img/2.jpg); background-size: cover;">
                         <h1>ภาคกลาง</h1>
-                        <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                        <p> 19 แหล่งท่องเที่ยว ของภาคกลาง</p>
                     </a>
                 </li>
             </ul>
@@ -206,22 +213,25 @@
                 <li>
                     <a href="../src/page3.html" style="background-image: url(../img/3.jpg); background-size: cover;">
                             <h1>ภาคอีสาน</h1>
-                            <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                            <p> 30 แหล่งมหัศจรรย์ ของภาคอีสาน</p>
                     </a>
                 </li>
 
                 <li >
                     <a href="../src/page4.html" style="background-image: url(../img/4.jpg); background-size: cover;">
                         <h1>ภาคใต้</h1>
-                        <p>เมื่อก่อนในอดีตเราอาจคิดว่าภาคอีสานไม่มีอะไรน่าเที่ยว ที่เที่ยวน้อย แต่ในปัจจุบันการท่องเที่ยวภาคอีสานมาแรงขึ้นเรื่อยๆ</p>
+                        <p> 10 เกาะที่ห้ามพลาด ของภาคใต้ </p>
+                        
                     </a>
                 </li>
             </ul>
         </div>
         <footer>
             <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li>
+                    <i class="fab fa-facebook"></i><a href="#">  facebook</a><br>
+                    <i class="fab fa-instagram-square"></i><a href="#"> Instagram</a>
+                </li>
             </ul>
         </footer>
     </div>
